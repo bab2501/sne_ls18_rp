@@ -1,0 +1,111 @@
+% \documentclass[a4paper]{article}
+\documentclass[journal]{IEEEtran}
+\usepackage{blindtext}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{graphviz}
+\pagenumbering{gobble}
+\usepackage{float}
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+% package for including graphics with figure-environment
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+% colors for hyperlinks
+% colored borders (false) colored text (true)
+\hypersetup{colorlinks=true,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+
+% package for bibliography
+\usepackage[style=numeric,natbib=true]{biblatex}
+\bibliography{rel.bib}
+
+% package for header
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+\ihead[]{SSN Project}
+\ohead[]{\today}
+\cfoot[]{\pagemark} 
+\begin{document}
+    \title{xxx\\~\\
+    \large{Student Project for LS
+    \\Master Security and Network Engineering \\ University of Amsterdam\\
+    \\LS Project Proposal\\}
+    \textbf{Version:} 0.01\\~\\}
+    \author{
+        Alexander Blaauwgeers \texttt{alexander.blaauwgeers@os3.nl} \and
+        pl \texttt{pl@os3.nl} %%\and
+        %% Student 3 \texttt{xx@os3.nl} \and
+        %% Student 4 \texttt{xx@os3.nl} 
+    }
+
+	% name of the course and module
+	\date{
+	\\ \textnormal \today
+	}
+	\maketitle
+	\setlength{\parindent}{0pt}
+
+%\vspace{0cm}
+%\begin{abstract}
+%
+%\end{abstract}
+	\newpage
+%	\tableofcontents
+%	\newpage
+
+% \begin{multicols}{2}
+	
+\section{Introduction} 
+
+
+\section{Research question} 
+% Steffan <<
+The main research question of this paper is: 
+\newline
+\newline
+\textit{ccc?}
+\newline
+\newline
+Tho answer this question, the following sub-questions have been formulated:
+\begin{enumerate}
+\item CCC? 
+\end{enumerate}
+
+\section{Goal}
+
+
+\section{Scope}
+
+
+\section{Approach}
+
+
+
+\section{Planning}
+The planning is shown in Table \ref{tab:plan}.
+\begin{table}[H]
+    \centering
+\begin{tabular}{ | c | c }
+\cellcolor[gray]{0.7} week  \# 	&\cellcolor[gray]{0.7} Product\\
+\cellcolor[gray]{0.9} week 1 	& Proposal and literature study  \\
+\cellcolor[gray]{0.9} week 2 	& Main setup of the experiment  \\
+\cellcolor[gray]{0.9} week 3 	& Experiment (analysing), report  \\
+\cellcolor[gray]{0.9} week 4 	& Report and Presentation  \\
+\end{tabular}
+    \caption{Planning SSN project}
+    \label{tab:plan}
+\end{table}
+
+
+\section{Ethical issues}
+
+
+\nocite{*}
+\printbibliography
+% \end{multicols}
+\end{document}
