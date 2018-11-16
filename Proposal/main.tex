@@ -27,18 +27,16 @@
 % package for header
 \usepackage[automark]{scrpage2}
 \pagestyle{scrheadings}
-\ihead[]{SSN Project}
+\ihead[]{LS Project - The Tangle vs Blockchain}
 \ohead[]{\today}
 \cfoot[]{\pagemark} 
 \begin{document}
-    \title{xxx\\~\\
-    \large{Student Project for LS
-    \\Master Security and Network Engineering \\ University of Amsterdam\\
-    \\LS Project Proposal\\}
-    \textbf{Version:} 0.01\\~\\}
+    \title{The Tangle vs Blockchain\\ \Large{Performance analysis of Tangle against Blockchain.} \\~\\ 
+    \large{Student Project Proposal for Large Systems -- \textbf{Version:} 0.01
+    \\MSc Security and Network Engineering -- University of Amsterdam\\}}
     \author{
-        Alexander Blaauwgeers \texttt{alexander.blaauwgeers@os3.nl} \and
-        pl \texttt{pl@os3.nl} %%\and
+        Alexander Blaauwgeers \texttt{alexander.blaauwgeers@os3.nl} \\ \and
+        Pavlos Lontorfos \texttt{pavlos.lontorfos@os3.nl} %%\and
         %% Student 3 \texttt{xx@os3.nl} \and
         %% Student 4 \texttt{xx@os3.nl} 
     }
@@ -61,51 +59,76 @@
 % \begin{multicols}{2}
 	
 \section{Introduction} 
-
-
+Blockchain is a very promising technology of our age. It was originally created as  a “purely peer-to-peer version of electronic cash” commonly known as Bitcoin in 2008 \cite{forbesHistory}. In the beggining, blockchain and Bitcoin were synonymous. It took some time to discover the true potential of blockchain usage. Nowadays, blockchain technology is used in various fields like cryptocurrencies, voting systems, finance industry,\cite{Xavier+2016}, and even identity providers like public key infrustructure\cite{Rajneesh2018}. But blockchain has its drawbacks as well. Due to blockchains nature,which makes the size of the chain continuously bigger, scalability is a great issue which as a result, affects its performance\cite{baliga2018performance}. 
+In order to solve the problems that traditional blockchains have, IOTA started in 2014 to implement the "Tangle". The Tangle is a lightweight distributed ledger, which came to solve the scalability problems that blockchain while provide the same level of security. Tangle, instead of global blockchain uses directed acyclic graphs(DAG). When a new transaction arrives, it must approve two previous transactions.These approvals are represented by directed edges \cite{popov2016tangle}. Some of the benefits that this implementation has are many. First of all no mining is needed which makes it power efficient and suitable usage in internet of things(IoT) applications. In addition there are no transaction fees. This could be a great feature for small amount transactions. Furthermore the Tangle scales almost infinitely which again, makes it a perfect candidate for IoT\cite{Tangler}.
 \section{Research question} 
 % Steffan <<
 The main research question of this paper is: 
 \newline
 \newline
-\textit{ccc?}
+%%Main Question
+\textit{How do the Tangle compare with blockchain in terms of performance and scalability ? }
 \newline
 \newline
 Tho answer this question, the following sub-questions have been formulated:
 \begin{enumerate}
-\item CCC? 
+%%sub Questions
+\item How does the Tangle preform in terms of performance?
+\item How does the Tangle preform in terms of scalability?
+\item How does the Tangle preform compared with blockchain?
 \end{enumerate}
 
 \section{Goal}
-
+Our goal is to provide information about the performance,structure and security of both technologies, compare them for different use cases and decide which is a better solution for each case. In more detail we want to find which is the best solution in cases where we need:
 
 \section{Scope}
-
+This project focuses on the performance analysis to compare the scalability of the Tangle with blockchain. The focus of the project is on the Tangle and we use blockchain as a baseline. Describing the security differences between both systems is not a goal for the project. 
 
 \section{Approach}
-
-
-
+During the project we setup a environment for both techniques. Within this environment we will measure the performance of each in terms of CPU power consumption, memory usage, speed of transactions per minute, disk I/O and storrage needed. 
 \section{Planning}
-The planning is shown in Table \ref{tab:plan}.
-\begin{table}[H]
-    \centering
-\begin{tabular}{ | c | c }
-\cellcolor[gray]{0.7} week  \# 	&\cellcolor[gray]{0.7} Product\\
-\cellcolor[gray]{0.9} week 1 	& Proposal and literature study  \\
-\cellcolor[gray]{0.9} week 2 	& Main setup of the experiment  \\
-\cellcolor[gray]{0.9} week 3 	& Experiment (analyzing), report  \\
-\cellcolor[gray]{0.9} week 4 	& Report and Presentation  \\
-\end{tabular}
-    \caption{Planning SSN project}
-    \label{tab:plan}
-\end{table}
-
+The following schedule is proposed to complete the project.
+\begin{enumerate}
+    \itemsep0em
+    \item Week 1 (19/11 - 25-11): Initialize
+    \begin{itemize}
+        \itemsep0em
+        \item Setup project report.
+        \item Do research about Tangle and Blochchain. 
+        \item Find out the exact setup for our experiments.
+    \end{itemize}
+    \item Week 2 (26/11 - 2/12): Set-up test environment
+    \begin{itemize}
+        \itemsep0em
+        \item Continue research both technologies
+        \item Set up our test environments
+    \end{itemize}
+    \item Week 3 (3/12 - 9/12): Gathering results
+    \begin{itemize}
+        \itemsep0em
+        \item Run tests and make any necessary improvements
+        \item Gather results and evaluate them
+    \end{itemize}
+    \item Week 4 (10/10 - 16/10): Report
+    \begin{itemize}
+        \itemsep0em
+        \item Validate test results, observe, create statistics and reflect on research questions.
+        \item Finish research document.
+        \item Prepare presentation.
+    \end{itemize}
+    \item Week 4 (17/10 - 23/10): Report
+    \begin{itemize}
+        \itemsep0em
+        \item Presentation.
+        \item Finalize and submit research document.
+    \end{itemize}
+\end{enumerate}
 
 \section{Ethical issues}
+For this project we expect no ethical issues. However we might make use, a very small set of, public available blockchain data like transactions. In the case we find any sensitive data, or data which is possibly related to any identity, this data will be summarized and/or anonymized before publication.
 
-
+%%\end{multicols}
+\newpage
 \nocite{*}
 \printbibliography
-% \end{multicols}
 \end{document}
